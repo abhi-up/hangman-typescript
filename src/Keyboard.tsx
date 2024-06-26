@@ -39,7 +39,7 @@ const Keyboard = () => {
         >
             {KEYS.map((key) => {
                 return (
-                    <button disabled className={`${styles.btn} `} key={key}>
+                    <button className={`${styles.btn} `} key={key}>
                         {key}
                     </button>
                 )
