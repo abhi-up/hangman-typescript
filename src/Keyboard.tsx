@@ -40,6 +40,7 @@ const Keyboard = ({
     activeLetters,
     inactiveLetters,
     addGuessedLetter,
+    disabled = false,
 }: KeyboardProps) => {
     return (
         <div
@@ -58,7 +59,7 @@ const Keyboard = ({
                         className={`${styles.btn} ${
                             isActive ? styles.active : ""
                         } ${isInactive ? styles.inactive : ""}`}
-                        disabled={isInactive || isActive}
+                        disabled={isInactive || isActive || disabled}
                         key={key}
                     >
                         {key}
